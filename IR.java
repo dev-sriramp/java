@@ -36,8 +36,9 @@ public class IR {
                     empty=empty+temp.charAt(j);
                 }
                 arr[i]=empty;
+                arr[i]=arr[i].replaceAll("6", "9");
             }
-            arr[i]=arr[i].replaceAll("6", "9");
+            
             total+=Integer.parseInt(arr[i]);
         }
         double tot = total/arr.length;
