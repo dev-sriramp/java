@@ -12,6 +12,7 @@ public class SpecialNumbers {
                }
             }
         }
+        //System.out.println(temp.trim());
         return temp.trim();
     }
     public static void main(String[] args) {
@@ -32,10 +33,14 @@ public class SpecialNumbers {
                    tempcount++;
                }
            }
-           if(tempcount>=count){
+           if(tempcount>count){
                count = tempcount;
-               if(currentValue<Integer.parseInt(temp)){
                    currentValue=Integer.parseInt(temp);
+               
+           }
+           else if(tempcount==count){
+               if(currentValue<Integer.parseInt(temp)){
+                   currentValue = Integer.parseInt(temp);
                }
            }
         }
